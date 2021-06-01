@@ -1,4 +1,5 @@
 import model.User;
+import service.MessageService;
 import service.UserService;
 
 import java.util.Scanner;
@@ -63,10 +64,13 @@ public class Main {
 
             switch (option){
                 case 1:
+                    MessageService.newMessage(user);
                     break;
                 case 2:
+                    MessageService.readMessages();
                     break;
                 case 3:
+                    MessageService.deleteMessages(user);
                     break;
                 case 4:
                     UserService.updateUser(user);

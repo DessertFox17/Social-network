@@ -11,6 +11,6 @@ public class Message {
     private int messageId;
     private String message;
     private String date;
-    private int user_id;
-    private String fullNAme;
+    private int userId;
+    private String fullName;
 }

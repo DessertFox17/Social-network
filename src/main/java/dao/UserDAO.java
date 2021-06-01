@@ -2,13 +2,13 @@ package dao;
 
 import dbconnection.DatabaseConnection;
 import model.User;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UserDAO {
+
     public static void newUser(User user) {
         DatabaseConnection cnx = new DatabaseConnection();
 
